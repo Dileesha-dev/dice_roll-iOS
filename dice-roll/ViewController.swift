@@ -9,9 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageViewDice1: UIImageView!
+    @IBOutlet weak var imageViewDice2: UIImageView!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
+        imageViewDice1.image = #imageLiteral(resourceName: "Dice1")
+        imageViewDice2.image = #imageLiteral(resourceName: "Dice2")
     }
 
 

@@ -16,27 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dki-C8-pjZ">
-                                <rect key="frame" x="40" y="319" width="140" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CkC-J8-vKf">
+                                <rect key="frame" x="254" y="339" width="140" height="140"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQ9-4b-rXL">
-                                <rect key="frame" x="132" y="748" width="151" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQ9-4b-rXL">
+                                <rect key="frame" x="132" y="748" width="150" height="48"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <state key="normal" title="Roll">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CkC-J8-vKf">
-                                <rect key="frame" x="236" y="319" width="140" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dki-C8-pjZ">
+                                <rect key="frame" x="20" y="339" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="Ncb-rA-fle"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dki-C8-pjZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EGl-LL-EbN"/>
+                            <constraint firstItem="GQ9-4b-rXL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FrL-Kv-2yo"/>
+                            <constraint firstItem="dki-C8-pjZ" firstAttribute="leading" secondItem="CkC-J8-vKf" secondAttribute="leading" constant="-234" id="GRu-U2-g3j"/>
+                            <constraint firstItem="GQ9-4b-rXL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="O8D-8j-9b4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GQ9-4b-rXL" secondAttribute="bottom" constant="66" id="aL7-am-83O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CkC-J8-vKf" secondAttribute="trailing" constant="20" id="g97-F4-B2q"/>
+                            <constraint firstItem="dki-C8-pjZ" firstAttribute="width" secondItem="CkC-J8-vKf" secondAttribute="width" multiplier="2.38571" constant="-194" id="gGF-hD-ihz"/>
+                            <constraint firstItem="dki-C8-pjZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="295" id="jSe-7S-lqY"/>
+                            <constraint firstItem="dki-C8-pjZ" firstAttribute="height" secondItem="CkC-J8-vKf" secondAttribute="height" id="pLX-h0-4Lz"/>
+                            <constraint firstItem="CkC-J8-vKf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="295" id="zhe-CA-ch9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageViewDice1" destination="dki-C8-pjZ" id="3qk-he-kw2"/>
+                        <outlet property="imageViewDice2" destination="CkC-J8-vKf" id="lxz-nq-LaJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
